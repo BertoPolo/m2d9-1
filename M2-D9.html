@@ -52,6 +52,47 @@ Make sure you check the documentation before creting anything custom.
             opacity: 1;
         }
         }
+
+        #idFavList{
+            position: relative;
+        }
+
+        .bad1{
+            position: absolute;
+            top:0;
+            left:0;
+        }
+
+        .bad2{
+            position: absolute;
+            top:0;
+            left:0;
+        }
+
+        .bad3{
+            position: absolute;
+            top:0;
+            left:0;
+        }
+
+        .bad4{
+            position: absolute;
+            top:0;
+            left:0;
+        }         
+
+        .bad5{
+            position: absolute;
+            top:0;
+            left:0;
+        }
+
+        .bad6{
+            position: absolute;
+            top:0;
+            left:0;
+        }
+
     </style>
 </head>
 
@@ -174,19 +215,23 @@ Make sure you check the documentation before creting anything custom.
         
       </section>
   <hr>
+      <h2>Favourite list</h2>
 
+      <!-- Favourite List -->
       <section>
-        <div class="card text-dark" style="width: 18rem;">
+        <div id="idFavList" class="card text-dark pos" style="width: 18rem;">
             <ul class="list-group list-group-flush">
-              <li class="list-group-item">Slayer - Reign in blood</li>
-              <li class="list-group-item">Los Suaves - Esta vida me va a matar</li>
-              <li class="list-group-item">Agar Agar - Cardan</li>
-              <li class="list-group-item">Gorillaz - Plastic Beach</li>
-              <li class="list-group-item">Ghostemane - ANTI-ICON</li>
-              <li class="list-group-item">R De Rumba - R de Rumba</li>
-            </ul>
+              <li class="list-group-item">Slayer - Reign in blood <span class="badge badge-danger bad1">Danger</span></li>
+              <li class="list-group-item">Los Suaves - Esta vida me va a matar<span class="badge badge-dark bad2">Dark</span></li>
+              <li class="list-group-item">Agar Agar - Cardan <span class="badge badge-primary bad3">Primary</span></li>
+              <li class="list-group-item">Gorillaz - Plastic Beach <span class="badge badge-warning bad4">Warning</span></li>
+              <li class="list-group-item">Ghostemane - ANTI-ICON <span class="badge badge-dark bad5">Dark</span></li>
+              <li class="list-group-item">R De Rumba - R de Rumba <span class="badge badge-success bad6">Success</span></li>
+            </ul>         
+
           </div>
       </section>
+      <br><br>
   <!-- WORST ALBUM -->
   
       <section id="worst">
@@ -219,8 +264,8 @@ Make sure you check the documentation before creting anything custom.
     -->
 
     <!-- EXERCISE 2
-        Use a Bootstrap Card to contain every album in the favorite list you previously created.
-        Use the elements of a card bootstrap provides you with to display nicely the album informations such as: album title, artist, year, etc..
+       - Use a Bootstrap Card to contain every album in the favorite list you previously created.
+       - Use the elements of a card bootstrap provides you with to display nicely the album informations such as: album title, artist, year, etc..
     -->
 
     <!-- EXERCISE 3
