@@ -20,12 +20,153 @@ Make sure you check the documentation before creting anything custom.
 <head>
     <!-- IMPORT ALL THE BOOSTRAP RELATED CSS & SCRIPTS-->
 
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
     <style>
         /* PREVIOUS CODE */
+        body{
+          background: rgb(2,0,36);
+          background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(121,9,21,1) 58%, rgba(0,74,255,1) 100%);
+          color: white;
+      }
+     
     </style>
 </head>
 
 <body>
+
+     <!-- Navbar --> 
+
+     <nav class="navbar navbar-expand-lg navbar-light bg-primary fixed-top">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#favorite">Fav.Groups <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#nice">Nice Album</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#worst">Trash Albums</a>
+            </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0 bg-dark" type="submit">Search</button>
+          </form>
+        </div>
+      </nav>
+      <br><br><br>
+  
+      <!-- CARDS -->
+      <section id="favorite"class="text-dark">
+        <h1 class="text-white">Favourite Groups</h1>
+  
+       <!-- card 1  -->
+        <div class="container">
+          <div class="row row-cols-4 ">
+            <div class="col-6 col-md-4 col-lg-3 card" style="width: 18rem;">
+              <img src="https://3dwarehouse.sketchup.com/warehouse/v1.0/publiccontent/542a2f7b-1a79-40c7-999d-515f73b9bc8c" class="card-img-top" alt="a1">
+              <div class="card-body">
+                <h3 class="card-title">Slayer</h3>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <h5> >Thrash Metal< </h5>
+                <a href="#" class="btn btn-primary">Go playlist</a>
+              </div>
+            </div>
+  
+            <!-- card 2  -->
+            <div class="col-6 col-md-4 col-lg-3 card" style="width: 18rem;">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjRf5DxAe-6XkkkKEvyOZlXo0ORmMxBA7Pkg99Yrs_l9BUvV4l9y3kQAbkybijMdaOFT4&usqp=CAU" class="card-img-top" alt="a2">
+              <div class="card-body">
+                <h3 class="card-title">Los Suaves</h3>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <h5> >Rock and Roll< </h5>
+                <a href="#" class="btn btn-primary">Go playlist</a>
+              </div>
+            </div>
+  
+            <!-- card 3  -->
+            <div class="col-6 col-md-4 col-lg-3 card" style="width: 18rem;">
+              <img src="https://i.scdn.co/image/ab67616d0000b273719be02025db69fc168d35f5" class="card-img-top" alt="a3">
+              <div class="card-body">
+                <h3 class="card-title">Agar Agar</h3>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <h5>>Psycho-electro-pop<</h5>
+                <a href="#" class="btn btn-primary">Go playlist</a>
+              </div>
+            </div>          
+            
+            <!-- card 4  -->
+            <div class="col-6 col-md-4 col-lg-3 card" style="width: 18rem;">
+              <img src="https://i.pinimg.com/564x/17/63/f8/1763f835a3675bb5b6e6fe1c86ea9261.jpg" class="card-img-top" alt="a4">
+              <div class="card-body">
+                <h3 class="card-title">Gorillaz</h3>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <h5>>Alternative rock-art pop-hip hop-electronic-trip hop<</h5>
+                <a href="#" class="btn btn-primary">Go playlist</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section> 
+      <hr>
+  
+  <!-- NICE ALBUM -->
+  
+     <section id="nice">
+       <div>
+         <img  src="https://img.discogs.com/7eLstM1Il5q7dy9RRBn0LmcDbsU=/fit-in/300x300/filters:strip_icc():format(jpeg):mode_rgb():quality(40)/discogs-images/R-5305310-1390102822-4594.jpeg.jpg" alt="la femme">
+         <h2>Psycho Tropical Berlin,La Femme</h2>
+         <h4> - New wave surf - </h4> 
+         <h5> Duration: 1h 4m 46s</h5>
+        </div><br>
+         <p class="text-center text-white"> La Femme. Será una de las tres playas de Egipto –Marina resort-, reservadas para la elite femenina? De estas 100% para mujeres, burlando las castas miradas del público masculino, luciendo el último bikini Dior, aguardando la burka H&M en la toalla? Pues no. Será la serie TV de Singapur de finales de los 2000, que relataba la vida de tres modernas mujeres chinas? Duró un mes en pantalla, se ve que no gusta la ciencia ficción en la isla. Será el Dodge Chrysler de 1955, un cupé blanco y rosa especialmente diseñado para mujeres, con asientos delanteros tipo sofá cama de una sola pieza, limitando considerablemente la perdida de llaves -en especial las del coche-, pintalabios, kleenex, espejito, píldoras, chicles, lima, rimmel, bolsita de azúcar, agenda, tarjetero –de fidelidad, un mínimo de veinticinco-, polvo facial anti edad, cepillo para el pelo y los dientes, pero cero preservativo-? Pues va a ser que tampoco.  Será esta banda punk glam australiana de finales de los 70’s –sí, hubo vida musical más allá de AC/DC, REM e INXS en kangurulandia-? Bien podría ser, pero no. La Femme. Será esta banda francesa new wave surf de 2010 con aire ochentero que casi repela? Buf, pues sí.</p>
+        <div>
+          <h5>Tracklist</h5>
+          <p> 1 lala</p>
+          <p> 1 lala</p>
+          <p> 1 lala</p>
+          <p> 1 lala</p>
+          <p> 1 lala</p>
+          <p> 1 lala</p>
+          <p> 1 lala</p>
+          <p> 1 lala</p>
+          <p> 1 lala</p>
+        </div>
+        
+      </section>
+  <hr>
+  <!-- WORST ALBUM -->
+  
+      <section id="worst">
+        <h2> Trash Albums</h2>
+        <div>
+          <img src="https://elzocco.com/wp-content/uploads/2021/10/Lo-Siento-BB.jpg" alt="mierda bunny">
+        <h4>Lo siento BB, Bad Bunny</h4>
+        </div>
+        <div>
+          <img src="https://images-na.ssl-images-amazon.com/images/I/51KzN4eL8pL._SY445_SX342_QL70_ML2_.jpg" alt="mierda stopa">
+        <h4>Esencial Estopa,Estopa</h4>
+        </div>
+      </section>
+    <hr>
+  
+    <section class="admire">
+      <h2>Hall of Glory</h2>
+      <br>
+  
+      <h4>Motorhead</h4>
+      <h4>Metallica</h4>
+      <h4>Boy Harsher</h4>
+    </section>
+  <hr>
+   
 
     <!-- EXERCISE 1
         Create a Jumbotron section with a quick explanation / image of the website.
